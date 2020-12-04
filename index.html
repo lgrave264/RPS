@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/RPS.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    <button class="buttons" type="button" onclick="function Rps()">start</button>
+    <table align="center">
+        <tr>
+            <td><img id="imgrock" src="images/rock.png" onclick="function crock()"></td>
+            <td><img id="imgpaper" src="images/paper.png" onclick="function cpaper()"></td>
+            <td><img id="imgscissors" src="images/sccissors.png" onclick="function cscissors()"></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="crock()">select rock</button></td>
+            <td><button type="button" onclick="cpaper()">select paper</button></td>
+            <td><button type="button" onclick="cscissors()">select scissors</button></td>
+        </tr>
+    </table>
+
+    <script src="JS/RPS.js"></script>
+</body>
+</html>
