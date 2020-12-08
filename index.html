@@ -4,11 +4,12 @@
     <link rel="stylesheet" href="CSS/RPS.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, paper, scissors</title>
 </head>
 <body>
     <h1>Rock, Paper, Scissors</h1>
-    <button class="buttons" type="button" onclick="function Rps()">start</button>
+    <P id="status">Choose between rock, paper, and scissors and click start</P>
+    <button class="buttons" id="startB" type="button" onclick="RPS()">start</button>
     <table align="center">
         <tr>
             <td><img id="imgrock" src="images/rock.png" onclick="function crock()"></td>
@@ -20,8 +21,14 @@
             <td><button type="button" onclick="cpaper()">select paper</button></td>
             <td><button type="button" onclick="cscissors()">select scissors</button></td>
         </tr>
+        <tr>
+            <td id="tally"><p>wins</p><p id="win">0</p></td>
+            <td id="tally"><p>ties</p><p id="tie">0</p></td>
+            <td id="tally"><p>loses</p><p id="lose">0</p></td>
+        </tr>
     </table>
-
+    <br>
+    <button onClick="window.location.reload();">Refresh Page</button>
     <script src="JS/RPS.js"></script>
 </body>
 </html>

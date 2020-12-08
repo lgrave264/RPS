@@ -12,6 +12,11 @@ h1{
     font-size: 75px;
 }
 
+p{
+    font-size: larger;
+    font-weight: bold;
+}
+
 .buttons{
     border-radius: 50%;
     font-size: larger;
@@ -27,4 +32,8 @@ h1{
 
 #imgscissors{
     background-color: none;
+}
+
+td#tally{
+    border: 10px double black;
 }
